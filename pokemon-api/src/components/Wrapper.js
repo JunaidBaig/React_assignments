@@ -7,7 +7,7 @@ const Wrapper = () => {
 
     const onSubmitHandler = event =>{
         event.preventDefault();
-        fetch("https://pokeapi.co/api/v2/pokemon")
+        fetch("https://pokeapi.co/api/v2/pokemon/?offset=20&limit=807")
         .then(response => {
           return response.json();
         }).then(response => {
